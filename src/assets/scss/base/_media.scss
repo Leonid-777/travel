@@ -1,0 +1,244 @@
+@media (max-width: 769px) {
+    .header {
+        &__panel {
+            max-width: 98%;
+        }
+        &__email, &__phone {
+            display: none;
+        }
+        #first-btn {
+            margin-right: 20px;
+        }
+        &__logo {
+            margin-left: 40px;
+            span {
+                font-size: 18px;
+            }
+            font-size: 16px;
+            img {
+                display: block;
+                max-width: 50px;
+                margin-right: 12px;
+            }
+        }
+        &__menu {
+            justify-content: center;
+        }
+        h1 {
+            font-size: 70px;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .button_header {
+            margin: 0 auto;
+            margin-top: 150px;
+            width: 180px;
+        }
+    }
+    .gallery {
+        &__grid {
+            grid-template-columns: 256px 256px;
+        }
+    }
+    .routes {
+        &__grid {
+            margin: 0 auto;
+            margin-top: 40px;
+            grid-template-columns: 250px 250px;
+            width: 533px;
+        }
+    }
+
+
+.menuToggle{  
+    position: absolute;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    right: 40px;
+    margin-top: 40px;
+    z-index: 20;
+    display: none;
+}
+    .header {
+        h1 {
+            margin-top: 100px;
+        }
+
+    }
+    .menuToggle{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        margin: 0 auto !important;
+        background: #ffffff;
+        width: 100%;
+        margin-left: -10px;
+        padding-top: 1em;
+        top: 0;
+        padding-left: 10px;
+        z-index: 12;
+        &__link {
+            color: $main-color !important;
+        }
+    }
+    .menu li{
+        display: block;
+    }
+
+
+.icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 40px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.hamburger:before {
+    top: -16px;
+}
+
+.hamburger:after {
+    top: 16px;
+}
+
+.icon.active .hamburger {
+    top: 40px;
+    right: 40px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: $main-color;
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+    background-color: $main-color;
+}
+
+.about {
+    &__wrap {
+        flex-direction: column;
+    }
+    &__img {
+        margin: 0;
+        max-width: 90%;
+    }
+    &__text {
+        margin: 0;
+        max-width: 90%;
+    }
+}
+.number {
+    &__grid {
+        justify-content: center !important;
+    }
+    &__item {
+        span {
+            font-size: 40px;
+        }
+        font-size: 18px;
+    }
+}
+.footer {
+    &__menu {
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: flex-start;
+        width: 200px;
+    }
+    &__item {
+        margin-top: 40px;
+    }
+}
+
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        &__grid {
+            grid-template-columns: 256px;
+        }
+    }
+    .routes {
+        &__grid {
+            margin: 0 auto;
+            margin-top: 40px;
+            grid-template-columns: 250px;
+            width: 250px;
+        }
+    }
+    .rest {
+        &__images__one {
+            max-width: 90%;
+            margin: 0 auto;
+            float: none;
+        }
+        &__text {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+    .number {
+        &__grid {
+            flex-direction: column;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: flex-start;
+            width: 315px;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .header {
+        h1 {
+            font-size: 50px;
+        }
+        &__panel {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            #first-btn {
+                margin: 0 auto;
+                margin-top: 12px;
+            }
+        }
+    }
+    body:after {
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+@import 'base/var';
+@import 'base/mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 81px;
+    z-index: 10;
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+}
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0;
+}
+.not {
+    display: none !important;
+}
+
+@import 'blocks/header';
+@import 'blocks/_button';
+@import 'blocks/gallery';
+@import 'blocks/title';
+@import 'blocks/_routes';
+@import 'blocks/map';
+@import 'blocks/about';
+@import 'blocks/rest';
+@import 'blocks/_number';
+@import 'blocks/_contact';
+@import 'blocks/_footer';
+
+
+@import 'base/media';

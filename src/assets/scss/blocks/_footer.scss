@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+    min-height: 330px;
+    background: #202020;
+    padding-top: 40px;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    &__submenu {
+        list-style-type: none;
+    }
+    &__subheader {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 12px;
+    }
+    &__subitem {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #FFFFFF;
+        opacity: 0.8;
+        margin-top: 12px;
+    }
+    hr {
+        background: #ffffff;
+        border-bottom: none;
+        margin-top: 18px;
+    }
+}

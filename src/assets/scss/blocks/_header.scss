@@ -1,0 +1,105 @@
+.header {
+    background: url(../images/bg/first-bg.png) center (center/cover) no-repeat;
+    min-height: 940px;
+    width: 100%;
+    position: relative;
+    &__panel {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 13px;
+    }
+    h1 {
+        font-family: 'PT Serif' !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 130%;
+        color: #FFFFFF;
+        
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-top: 10px;
+        max-width: 562px;
+    }
+    &__phone {
+        @include links();
+    }
+    &__email {
+        @include links();
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        span {
+            font-weight: 700;
+            font-size: 20px;
+            font-family: 'PT Serif' !important;
+        }
+        img {
+            display: block;
+            margin-right: 20px;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            list-style-type: none;
+            &__link {
+                display: block;
+                text-decoration: none;
+                max-width: 130px;
+                height: 40px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                margin: 0 16px 0 16px;
+                &:hover {
+                    text-decoration: underline;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    .button_header {
+        margin-top: 94px;
+    }
+    &__down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        left: 50%;
+        margin-left: -20px;
+        position: absolute;
+        font-size: 24px;
+        width: 40px;
+        top: calc(100% - 73px);
+        height: 40px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 100%;
+        &:hover {
+            color: #000000;
+            background-color: #fff;
+        }
+    }
+    &__email_mobile, &__phone_mobile {
+        display: none;
+    }
+}

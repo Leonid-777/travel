@@ -1,0 +1,26 @@
+.routes {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 582px;
+    padding: 44px auto 80px auto;
+    &__grid {
+        display: grid;
+        margin: 0 auto;
+        margin-left: 33px;
+        margin-top: 50px;
+        grid-template-columns: 250px 250px 250px 250px;
+        column-gap: 33px;
+        row-gap: 37px;
+    }
+    &__descr {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3em;
+        color: #333333;
+    }
+    .title {
+        margin-top: 44px;
+        text-align: center;
+    }
+}

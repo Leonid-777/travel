@@ -1,0 +1,21 @@
+.number {
+    padding: 40px 0 85px 0;
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #000000;
+        max-width: 315px;
+        span {
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 130%;
+            color: #64BD22;
+            font-family: 'PT Serif';
+        }
+    }
+}
